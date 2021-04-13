@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"unicode/utf8"
 )
 
 func task1(min int) {
@@ -59,4 +60,18 @@ func main() {
 	task2(0, 6)
 	task2(3, 5)
 	task3(1)
+
+	s := []string{"hello word"}
+	r, size := utf8.DecodeRuneInString(s[0])
+	for _, k := range r {
+		fmt.Printf("%v -%v \n", r)
+	}
+
+	str := "Hello, 世界"
+
+	for len(str) > 0 {
+		r, size := utf8.DecodeRuneInString(str)
+		fmt.Printf("%c %v\n", r, size)
+		str = str[size:]
+	}
 }
