@@ -26,10 +26,9 @@ func sortSlice(descending bool, s []int) {
 			min = s[i]
 			for j := i; j < len(s); j++ {
 				if s[j] < min {
-					temp = min
-					min = s[j]
-					s[j] = temp
-					s[i] = min
+					temp, min = min, s[j]
+					s[j], s[i] = temp, min
+
 				}
 			}
 		}
@@ -104,6 +103,6 @@ func hw4task2() {
 func main() {
 
 	hw4task1()
-	hw4task2()
+	//hw4task2()
 	//() // замечание - если одно и то же слово встречается один
 }
