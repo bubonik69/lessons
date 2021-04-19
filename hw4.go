@@ -100,6 +100,50 @@ func hw4task2() {
 	text := "Вы вы вы вы вы вы вы вы мы мы мы мы мы мы в в в в в где де до до дом и и и и и или или или или a  a a? a, она она она я"
 	calculatingWords(text, 3)
 }
+
+//************************************************************************************************
+//********************************		task3					**********************************
+type mm int // тип миллиметр
+type circle struct {
+	x      mm
+	y      mm
+	radius mm
+}
+type square struct {
+	x1 mm
+	y1 mm
+	x2 mm
+	y2 mm
+}
+type rectangle struct {
+	square
+}
+type rhombus struct {
+	square
+}
+func (c circle) printCircle(){
+	fmt.Printf( "Этот круг с центром %d мм ,%d мм и радиусом %d",c.x,c.x,c.radius)
+}
+func (c rectangle) printRectangular(){
+	fmt.Printf( "Этот четырехугольник с коорди натами  %d мм ,%d мм - %d мм ,%d мм ",c.x1,c.y1,c.x2,c.y2)
+}
+func (c square) printSquare(){
+	fmt.Printf( "Этот четырехугольник с коорди натами  %d мм ,%d мм - %d мм ,%d мм ",c.x1,c.y1,c.x2,c.y2)
+}
+func (c rhombus) printRhombus(){
+	fmt.Printf( "Этот четырехугольник с коорди натами  %d мм ,%d мм - %d мм ,%d мм ",c.x1,c.y1,c.x2,c.y2)
+}
+
+
+func hw4task3() {
+
+
+	hw4task3(){
+
+
+	}
+	//************************************************************************************************
+}
 func main() {
 
 	hw4task1()
