@@ -134,11 +134,20 @@ func (c rhombus) printRhombus(){
 	fmt.Printf( "Этот четырехугольник с коорди натами  %d мм ,%d мм - %d мм ,%d мм ",c.x1,c.y1,c.x2,c.y2)
 }
 
+func  AddSquare(x1,y1,x2,y2 int) с square {
+	if (x1>0 && y1>0 && x2>0 && y2>0){
+		c:=square(x1,y1,x2,y2)
+		return c
+	}
+
+
+}
+
 
 func hw4task3() {
+	figure:=
 
 
-	hw4task3(){
 
 
 	}
